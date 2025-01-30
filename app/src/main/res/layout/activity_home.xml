@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation.ui.home.HomeActivity">
+
+        <Button
+            android:id="@+id/btn_movies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Movies"
+            android:textSize="30sp"
+            android:background="@drawable/btn_bg"
+            app:layout_constraintBottom_toTopOf="@+id/btn_tv_shows"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_tv_shows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TV Shows"
+            android:textSize="30sp"
+            android:background="@drawable/btn_bg"
+            app:layout_constraintBottom_toTopOf="@+id/btn_artists"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_movies" />
+
+        <Button
+            android:id="@+id/btn_artists"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Artists"
+            android:textSize="30sp"
+            android:background="@drawable/btn_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_tv_shows" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
