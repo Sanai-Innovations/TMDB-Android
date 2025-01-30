@@ -1,2 +1,4 @@
 # TMDB-Android
-Fetching the popular Movies, Artisits and TVshows using the Clean architecture with Android Architecture components.. 
+MoviesBox is an android application having followed most of the latest Android Architecture Components, RxAndroid, Dagger2, Retrofit, MVVM Architecture, Clean Architecture, Data Binding, View Binding
+
+
